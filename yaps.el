@@ -135,7 +135,7 @@
 (define-minor-mode yaps-mode
   "Minor mode of Yaps."
   :init-value nil
-  :lighter "yaps"
+  :lighter " yaps"
   :group 'yaps
   :global nil
   :keymap yaps-mode-map
