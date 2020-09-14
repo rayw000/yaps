@@ -146,11 +146,12 @@
 (make-local-variable 'yaps-mode)
 
 ;; auto enable `yaps-mode' for `yaps-scratch-buffer-name'.
-(defun yaps--launch ()
+;;;###autoload
+(defun yaps-setup ()
+  "Launch yaps."
   (with-current-buffer (get-buffer-create yaps-scratch-buffer-name)
-    (call-interactively 'yaps-mode)))
-
-(add-hook 'emacs-startup-hook 'yaps--launch)
+    (when (not yaps-mode)
+      (call-interactively 'yaps-mode))))
 
 (provide 'yaps)
 ;;; yaps.el ends here
