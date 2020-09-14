@@ -15,12 +15,15 @@ git clone https://github.com/rayw000/yaps.git
 ```
 Or install with ELPA
 ```
-package-install <RET> yaps <RET>
+M-x package-install <RET> yaps <RET>
 ```
 Once you load `yaps` package, it will be automatically enabled in your `*scratch*` buffer.
 
 ### Usage
-You don't need much configurations to use `yaps`. After install and properly load it, you can enjoy it in your `*scratch*` buffer.
+```emacs-lisp
+(require 'yaps)
+(yaps-mode)
+```
 
 ### Functions
 - `yaps-save-scratch-data`: Save scratch contents into `yaps-data-directory`. `C-x C-s` is remapped to this function.
