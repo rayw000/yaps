@@ -55,7 +55,7 @@
 ;;
 ;;     `yaps-restore-data-from-file': Restore data from yaps data file.
 
-
+;;; Code:
 
 (defgroup yaps nil
   "Yaps group."
@@ -99,6 +99,7 @@
 
 ;;;###autoload
 (defun yaps-clear-scratch-data ()
+  "Clear data in `yaps-scratch-buffer-name' buffer."
   (interactive)
   (with-current-buffer yaps-scratch-buffer-name
     (erase-buffer)))
