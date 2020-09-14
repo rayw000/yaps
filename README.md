@@ -30,11 +30,11 @@ You don't need much configurations to use this package. After install and proper
 
 ### Customizations
 
-- Variables
+##### Variables
 `yaps-scratch-buffer-name`: Buffer name which you want to use `yaps` with, default to `*scratch*`.
 `yaps-data-directory`: Directory to store yaps data file `yaps.data`.
 
-- Key bindings
+##### Key bindings
 You can bind your favorite keys in `yaps-mode-map`. For example,
 ```emacs-lisp
 (define-key yaps-mode-map (kbd "C-c C-r") 'yaps-restore-data-from-file)
