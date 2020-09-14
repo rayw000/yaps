@@ -23,13 +23,10 @@ Once you require `yaps` package, it will be automatically enabled in your `*scra
 You don't need much configurations to use this package. After install and properly load it, you can enjoy it in your `*scratch*` buffer.
 
 ### Functions
-`yaps-save-scratch-data`: Save scratch contents into `yaps-data-directory`. `C-x C-s` is remapped to this function.
-
-`yaps-clear-scratch-data`: Clear scratch contents.
-
-`yaps-bury-scratch-buffer`: Bury (instead of kill) scratch buffer.
-
-`yaps-restore-data-from-file`: Restore data from yaps data file.
+- `yaps-save-scratch-data`: Save scratch contents into `yaps-data-directory`. `C-x C-s` is remapped to this function.
+- `yaps-clear-scratch-data`: Clear scratch contents.
+- `yaps-bury-scratch-buffer`: Bury (instead of kill) scratch buffer.
+- `yaps-restore-data-from-file`: Restore data from yaps data file.
 
 ### Customizations
 
