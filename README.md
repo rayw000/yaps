@@ -1,8 +1,8 @@
-Yet Another Persistent Scratch
+Yaps - Yet Another Persistent Scratch
 ====================================
 
 ### Introduction
-This package makes your `*scratch*` buffer persistent and not killable (bury instead).
+Yaps makes your `*scratch*` buffer persistent and not killable (bury instead).
 
 ### Install
 If you don't have ELPA package in your Emacs, clone this repository and load file.
@@ -17,10 +17,10 @@ Or install with ELPA
 ```
 package-install <RET> yaps <RET>
 ```
-Once you require `yaps` package, it will be automatically enabled in your `*scratch*` buffer.
+Once you load `yaps` package, it will be automatically enabled in your `*scratch*` buffer.
 
 ### Usage
-You don't need much configurations to use this package. After install and properly load it, you can enjoy it in your `*scratch*` buffer.
+You don't need much configurations to use `yaps`. After install and properly load it, you can enjoy it in your `*scratch*` buffer.
 
 ### Functions
 - `yaps-save-scratch-data`: Save scratch contents into `yaps-data-directory`. `C-x C-s` is remapped to this function.
@@ -40,5 +40,5 @@ You can bind your favorite keys in `yaps-mode-map`. For example,
 (define-key yaps-mode-map (kbd "C-c C-r") 'yaps-restore-data-from-file)
 ```
 
-### Similar packages:
+### Similar packages
 [persistent-scratch](https://github.com/Fanael/persistent-scratch)
