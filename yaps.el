@@ -63,10 +63,12 @@
   :group 'files)
 
 (defcustom yaps-scratch-buffer-name "*scratch*"
-  "Scratch buffer name which `yaps' will connect to.")
+  "Scratch buffer name which `yaps' will connect to."
+  :type 'string)
 
 (defcustom yaps-data-directory user-emacs-directory
-  "Directory for yaps data.")
+  "Directory for yaps data."
+  :type 'string)
 
 (defvar yaps--data-file (concat yaps-data-directory
                                 (unless (equal (substring yaps-data-directory -1) "/") "/")
