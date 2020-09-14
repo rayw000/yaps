@@ -38,8 +38,8 @@ You may want to hook `yaps-setup` to `emacs-startup-hook`.
 ### Customizations
 
 ##### Variables
-`yaps-scratch-buffer-name`: Buffer name which you want to use `yaps` with, default to `*scratch*`.
-`yaps-data-directory`: Directory to store yaps data file `yaps.data`.
+- `yaps-scratch-buffer-name`: Buffer name which you want to use `yaps` with, default to `*scratch*`.
+- `yaps-data-directory`: Directory to store yaps data file `yaps.data`.
 
 ##### Key bindings
 You can bind your favorite keys in `yaps-mode-map`. For example,
