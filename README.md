@@ -16,7 +16,6 @@ Or install with ELPA
 ```
 M-x package-install <RET> yaps <RET>
 ```
-Once you load `yaps` package, it will be automatically enabled in your `*scratch*` buffer.
 
 ### Usage
 ```emacs-lisp
