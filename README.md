@@ -11,7 +11,6 @@ git clone https://github.com/rayw000/yaps.git
 ```
 ```emacs-lisp
 (load-file "/path/to/yaps/yaps.el")
-(require 'yaps)
 ```
 Or install with ELPA
 ```
