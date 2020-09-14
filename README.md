@@ -22,7 +22,12 @@ Once you load `yaps` package, it will be automatically enabled in your `*scratch
 ### Usage
 ```emacs-lisp
 (require 'yaps)
-(yaps-mode)
+(yaps-setup)
+```
+
+You may want to hook `yaps-setup` to `emacs-startup-hook`.
+```emacs-lisp
+(add-hook 'emacs-startup-hook 'yaps-setup)
 ```
 
 ### Functions

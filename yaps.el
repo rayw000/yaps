@@ -35,7 +35,7 @@
 ;;   Require package:
 ;;
 ;;     (require 'yaps) ;; if not using the ELPA package
-;;     Once you require, `yaps-mode' would automatically be enabled on buffer `yaps-scratch-buffer-name'.
+;;     (yaps-setup) ;; enable yaps-mode for `yaps-scratch-buffer-name'
 ;;
 ;;   Customizations:
 ;;
