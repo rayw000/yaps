@@ -58,7 +58,7 @@
 
 
 (defgroup yaps nil
-  "Yet Another Persistent Scratch."
+  "Yaps group."
   :prefix "yaps-"
   :group 'files)
 
@@ -132,25 +132,22 @@
 
 ;;;###autoload
 (define-minor-mode yaps-mode
-  "Minor mode of Yet Another Persistent Scratch."
+  "Minor mode of Yaps."
   :init-value nil
   :lighter "yaps"
   :group 'yaps
   :global nil
   :keymap yaps-mode-map
   :after-hook (yaps-restore-data-from-file)
-  (if (and (boundp 'yaps-mode)
-           yaps-mode)
+  (if yaps-mode
       (add-hook 'kill-buffer-query-functions 'yaps-bury-scratch-buffer)
-    (setq-local yaps-mode nil)
     (remove-hook 'kill-buffer-query-functions 'yaps-bury-scratch-buffer)))
 
 (make-local-variable 'yaps-mode)
 
 ;; auto enable `yaps-mode' for `yaps-scratch-buffer-name'.
-(add-hook 'after-init-hook
-          (lambda () (with-current-buffer (get-buffer-create yaps-scratch-buffer-name)
-                       (yaps-mode t))))
+(with-current-buffer (get-buffer-create yaps-scratch-buffer-name)
+  (call-interactively 'yaps-mode))
 
 (provide 'yaps)
 ;;; yaps.el ends here
