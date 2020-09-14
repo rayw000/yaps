@@ -148,8 +148,9 @@
 (make-local-variable 'yaps-mode)
 
 ;; auto enable `yaps-mode' for `yaps-scratch-buffer-name'.
-(with-current-buffer (get-buffer-create yaps-scratch-buffer-name)
-  (yaps-mode t))
+(add-hook 'after-init-hook
+          (lambda () (with-current-buffer (get-buffer-create yaps-scratch-buffer-name)
+                       (yaps-mode t))))
 
 (provide 'yaps)
 ;;; yaps.el ends here
